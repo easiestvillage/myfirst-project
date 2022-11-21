@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <title>MyFirst III</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>welcome to myfirst!</h1>
+            <a href="#">Pre #1</a>
+            <a href="#">Training #2</a>
+            <p>*нажми на текст, чтобы зайти на сервер</p>
+
+        </div>
+    </div>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <a class="image" href="//myfirst.fun">
+                    <img src="../assets/logo.png" alt="">
+                </a>
+
+                <div class="text logo-text">
+                    <span class="name">MyFirst</span>
+                    <span class="profession">HNS Project</span>
+                </div>
+            </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'><ion-icon name="add-outline"></ion-icon></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon' ><ion-icon name="home"></ion-icon></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ><ion-icon name="planet"></ion-icon></i>
+                            <span class="text nav-text">About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'><ion-icon name="people"></ion-icon></i>
+                            <span class="text nav-text">Users</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>                
+            </div>
+        </div>
+
+    </nav>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      modeSwitch = body.querySelector(".toggle-switch")
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
